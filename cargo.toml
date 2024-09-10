@@ -1,0 +1,15 @@
+[package]
+name = "solana-burn-token"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+solana-program = "1.18.18"
+spl-token = { version = "3.3.0", features = ["no-entrypoint"] }
+spl-associated-token-account = { version ="2.2.0", features = ["no-entrypoint"] }
+
+[features]
+no-entrypoint = []
